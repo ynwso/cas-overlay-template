@@ -1,0 +1,6 @@
+##
+# support http 
+#
+cas: 
+  tgc: 
+    secure: false

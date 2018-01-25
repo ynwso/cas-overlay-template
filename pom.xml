@@ -6,7 +6,7 @@
     <groupId>org.apereo.cas</groupId>
     <artifactId>cas-overlay</artifactId>
     <packaging>war</packaging>
-    <version>1.0</version>
+    <version>1.0</version> 
 
     <build>
         <plugins>
@@ -62,6 +62,22 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
             </plugin>
+            <plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.3.7.v20160115</version>
+				<configuration>
+					<webApp>
+						<contextPath>/cas</contextPath>
+						<allowDuplicateFragmentNames>true</allowDuplicateFragmentNames>
+					</webApp>
+					<httpConnector>
+						<port>8080</port>
+					</httpConnector>
+					<scanIntervalSeconds>0</scanIntervalSeconds>
+					<reload>manual</reload>
+				</configuration>
+			</plugin>
         </plugins>
         <finalName>cas</finalName>
     </build>
@@ -74,13 +90,24 @@
             <type>war</type>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+		     <groupId>org.apereo.cas</groupId>
+		     <artifactId>cas-server-support-ldap</artifactId>
+		     <version>${cas.version}</version>
+		</dependency>
+		<!-- <dependency>
+		     <groupId>org.apache.tomcat</groupId>
+		     <artifactId>tomcat-juli</artifactId>
+		     <version>9.0.2</version>
+		     <scope>provided</scope>
+		</dependency> -->
     </dependencies>
 
     <properties>
         <cas.version>5.2.1</cas.version>
         <springboot.version>1.5.8.RELEASE</springboot.version>
         <!-- app.server could be -jetty, -undertow, -tomcat, or blank if you plan to provide appserver -->
-        <app.server>-tomcat</app.server> 
+        <app.server></app.server> 
 
         <mainClassName>org.springframework.boot.loader.WarLauncher</mainClassName>
         <isExecutable>false</isExecutable>
