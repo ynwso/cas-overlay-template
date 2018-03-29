@@ -127,7 +127,7 @@ p {
 
 header {
   overflow: hidden;
-  padding: 20px 0; }
+  padding: 46px 0; }
 
 #logo {
   display: block;
@@ -1907,7 +1907,7 @@ fieldset[disabled] .btn-oidc.focus {
     content: '';
     display: block;
     position: absolute;
-    top: -15px;
+    top: -66px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -1915,7 +1915,7 @@ fieldset[disabled] .btn-oidc.focus {
 }
 
 .masthead {
-    padding: 60px 0 80px;
+    padding: 40px 0 80px;
     margin-bottom: 0;
     color: #fff;
     /*height: 500px;

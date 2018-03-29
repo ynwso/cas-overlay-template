@@ -1,0 +1,9 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^http://localhost",
+  "name" : "本地服务-CAS 管理程序",
+  "theme" : "sofree",
+  "id" : 10000003,
+  "description" : "Cas管理程序",
+  "evaluationOrder" : 1
+}
