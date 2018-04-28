@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{sofree/layout}">
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{normal/layout}">
 
 <head>
     <title th:text="#{cas.login.pagetitle}"></title>
@@ -7,9 +7,9 @@
 
 <body id="cas" class="login">
     <div layout:fragment="content">
-		<div id="banner" class="jumbotron masthead">
+		<div id="banner">
 			<div class="container">
-				<div class="row">
+				<div>
 					<!--<div id="notices" class="col-sm-12 col-md-6 col-md-push-6">
 						<div th:replace="fragments/insecure"/>
 						<div th:replace="fragments/defaultauthn"/>
@@ -19,11 +19,12 @@
 						<div th:replace="fragments/loginProviders" />
 					</div>-->
 					<div class="col-sm-12 col-md-6 col-md-push-6">
-						<div th:replace="sofree/fragments/loginform" />
+						<div th:replace="normal/fragments/loginform" />
 					</div>
 				</div>
 			</div>
-			
+		</div>
+		<div th:replace="normal/fragments/friendlylinks">
 		</div>
     </div>
 </body>
