@@ -2035,8 +2035,9 @@ ul {
     margin-bottom: 10px;
 }
 .friendly-links{
-	margin-bottom:10px;
-	padding:25px 10px 45px 10px;
+	margin-top:25px;
+	margin-bottom:50px;
+	padding:0px 10px;
 }
 .friendly-links .friendly-links-title{
 	font-size:24px;
@@ -2067,20 +2068,4 @@ ul {
 }
 .weixin_img{
 	margin:43px 0px 0px 40px;
-}
-
-.applications{
-	background-color:#f0f0f0;
-	
-}
-.applications img{
-	width:110px;
-	height:110px;
-	padding:5px;
-}
-.applications .friendly-links-url{
-	text-align:center;
-}
-.applications .friendly-links-url-title{
-	color:#333;
 }

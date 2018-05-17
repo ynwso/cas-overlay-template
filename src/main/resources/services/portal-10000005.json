@@ -1,0 +1,9 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^http://58.45.191.86:8083/*",
+  "name" : "portal",
+  "theme" : "normal",
+  "id" : 10000005,
+  "description" : "portal",
+  "evaluationOrder" : 1
+}

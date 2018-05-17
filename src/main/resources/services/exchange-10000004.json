@@ -1,0 +1,9 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^http://58.45.191.86:6690/exchange/*",
+  "name" : "exchange",
+  "theme" : "theme-app",
+  "id" : 10000004,
+  "description" : "Exchange",
+  "evaluationOrder" : 1
+}
