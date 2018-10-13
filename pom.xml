@@ -51,6 +51,7 @@
 			<artifactId>oracle-ojdbc6</artifactId>
 			<version>11.2.0.3.0</version>
 		</dependency>
+		<!-- support redis -->
 		<dependency>
 			<groupId>org.apereo.cas</groupId>
 			<artifactId>cas-server-support-redis-ticket-registry</artifactId>
@@ -61,6 +62,7 @@
 			<artifactId>cas-server-webapp-session-redis</artifactId>
 			<version>${cas.version}</version>
 		</dependency>
+		<!-- support redis end -->
 		<!-- <dependency> <groupId>com.jolbox</groupId> <artifactId>bonecp</artifactId> 
 			<version>0.8.0.RELEASE</version> </dependency> -->
 		<!-- <dependency> <groupId>org.apache.tomcat</groupId> <artifactId>tomcat-juli</artifactId> 
