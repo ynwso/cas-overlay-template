@@ -1,0 +1,11 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^http://yx.hnie.edu.cn.*",
+  "name" : "zzyx",
+  "theme" : "theme-app",
+  "id" : 10000006,
+  "description" : "Exchange",
+  "evaluationOrder" : 1,
+  "logoutType" : "FRONT_CHANNEL",
+  "logoutUrl" : "http://yx.hnie.edu.cn/website/logout"
+}
