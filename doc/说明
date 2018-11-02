@@ -1,0 +1,4 @@
+/serviceValidate和/validate接口只接收get请求，但是有些第三方的应用原来可能是使用了post，为了兼容，修改cas-server-support-validation项目下面的两个类：
+ServiceValidateController 
+LegacyValidateController
+生成了新jar包cas-server-support-validation-5.2.2-SNAPSHOT.jar替换cas-server-support-validation-5.2.1.jar
