@@ -68,7 +68,9 @@
                 class="btn btn-primary btn-success" onclick="redirectToApp();"
                 th:value="${'Go to ' + logoutRedirectUrl}"/> -->
 		<script type="text/javascript">
-	 	 window.location.href = "http://www1.hnie.edu.cn";
+		$(function(){
+			window.location.href = "http://www1.hnie.edu.cn";
+			});
 	  	</script>
     </div>
 </div>
